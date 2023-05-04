@@ -2,6 +2,15 @@
 
 [[Project website](https://clvrai.com/skill-chaining)] [[Paper](https://openreview.net/forum?id=K5-J-Espnaq)]
 
+To enable running on the Center for Advanced Research Computing (CARC), we used singularity package.
+The approach to write this singularity package is explained in the "Singularity.ubuntu-20.04-cuda-11.6-mujoco2.1_v5" file.
+
+Two more files "dljob.job" and "slurm_job.sh" are also added. 
+
+The role of "dljob.job" file is to submit a batch job file into the CARC.
+Then this file calls the "slurm_job.sh" file to use the singularity package.
+
+
 This project is a PyTorch implementation of [Adversarial Skill Chaining for Long-Horizon Robot Manipulation via Terminal State Regularization](https://clvrai.com/skill-chaining), published in CoRL 2021.
 
 
